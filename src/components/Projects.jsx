@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Text, Image, Link, Button, Flex } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -11,57 +11,78 @@ import weekend_planner from "../assets/Projects/weekend_planner.png";
 
 const projectsData = [
   {
-    key: 'weekend_planner',
+    key: "weekend_planner",
     imageSrc: weekend_planner,
-    title: 'Weekend Planner',
+    title: "Weekend Planner",
     description:
-      'A React app for planning and managing weekend trips with user authentication and data visualization.',
-    siteLink: 'https://my-weekend-planner.netlify.app/',
-    codeLink: 'https://github.com/rmauryaa/-Samsung-Saviors_058',
+      "A React app for planning and managing weekend trips with user authentication and data visualization.",
+    siteLink: "https://my-weekend-planner.netlify.app/",
+    codeLink: "https://github.com/rmauryaa/-Samsung-Saviors_058",
   },
   {
-    key: 'Dmart',
+    key: "Dmart",
     imageSrc: Dmart,
-    title: 'Dmart Clone',
+    title: "Dmart Clone",
     description:
-      'A clone of the DMart website, showcasing an e-commerce platform with responsive design.',
-    siteLink: 'https://syntax-saadhana-2345.netlify.app/',
-    codeLink: 'https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345',
+      "A clone of the DMart website, showcasing an e-commerce platform with responsive design.",
+    siteLink: "https://syntax-saadhana-2345.netlify.app/",
+    codeLink: "https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345",
   },
   {
-    key: 'Viatours',
+    key: "Viatours",
     imageSrc: Viatours,
-    title: 'Viatours Figma',
+    title: "Viatours Figma",
     description:
-      'A responsive recreation of Viatours’ interface using HTML and CSS, mirroring the original Figma design.',
-    siteLink: 'https://figma-syntax-saadhana-2345.netlify.app/',
-    codeLink: 'https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345',
+      "A responsive recreation of Viatours’ interface using HTML and CSS, mirroring the original Figma design.",
+    siteLink: "https://figma-syntax-saadhana-2345.netlify.app/",
+    codeLink: "https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345",
   },
   {
-    key: 'todo_list',
+    key: "todo_list",
     imageSrc: todo_list,
-    title: 'Todo-List',
+    title: "Todo-List",
     description:
-      'A JavaScript to-do list app with task prioritization and Git version control for collaboration.',
-    siteLink: 'https://github.com/rmauryaa/todo_list',
-    codeLink: 'https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345',
+      "A JavaScript to-do list app with task prioritization and Git version control for collaboration.",
+    siteLink: "https://github.com/rmauryaa/todo_list",
+    codeLink: "https://github.com/Abdullaabdulazeez/Syntax-Saadhana-2345",
   },
 ];
-
 
 const Projects = () => {
   const { colorMode } = useColorMode();
   const bgColor = colorMode === "dark" ? "#2c2c2c" : "#cecece";
+  const [slidesToShow, setSlidesToShow] = useState(1);
+
+  const toggleSlides = () => {
+    setSlidesToShow((prev) => (prev === 3 ? 1 : 3));
+  };
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 900,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: slidesToShow === 3 ? 2 : 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -83,7 +104,18 @@ const Projects = () => {
           mb={5}
         ></Box>
         <br />
-        <Box w="80%" margin="auto">
+        <Button
+          onClick={toggleSlides}
+          mb={8}
+          bg="#7B66FF"
+          _hover={{
+            transform: "scale(1.1)",
+            boxShadow: "0 0 10px gray",
+          }}
+        >
+          Toggle Slides
+        </Button>
+        <Box w={{ base: "90%", md: "80%" }} margin="auto">
           <Slider {...settings}>
             {projectsData.map((project) => (
               <Box
@@ -101,10 +133,10 @@ const Projects = () => {
                   borderRadius={"0.8rem"}
                 />
                 <br />
-                <Text fontWeight="bold" fontSize="2xl">
+                <Text fontWeight="bold" fontSize="2xl" textAlign="center">
                   {project.title}
                 </Text>
-                <Text>{project.description}</Text>
+                <Text textAlign="center">{project.description}</Text>
                 <Flex justify="center">
                   <Link href={project.siteLink} target="_blank">
                     <Button
