@@ -3,7 +3,6 @@ import { Flex, Box, Text, Image } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import cssIcon from "../assets/Skills icons/css-icon.svg";
 import jsIcon from "../assets/Skills icons/javascript-icon.svg";
-import pythonIcon from "../assets/Skills icons/python-icon.svg";
 import reactIcon from "../assets/Skills icons/react-js-icon.svg";
 import gitIcon from "../assets/Skills icons/git-icon.svg";
 import htmlIcon from "../assets/Skills icons/html-icon.svg";
@@ -88,10 +87,6 @@ const Skills = () => {
           <Box {...skillBoxStyle}>
             <Image src={reactIcon} height={"50%"} />
             <Text>React</Text>
-          </Box>
-          <Box {...skillBoxStyle}>
-            <Image src={pythonIcon} height={"50%"} />
-            <Text>Python</Text>
           </Box>
         </Flex>
         <br />

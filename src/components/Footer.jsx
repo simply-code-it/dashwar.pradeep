@@ -23,11 +23,10 @@ export default function Footer() {
               fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
               textShadow={"0 0 15px gray"}
             >
-              RAHUL
+              Pradeep
             </Text>
             <Text>
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web Applications that leads to the success of the overall
+              A FullStack focused Web Developer building the Web Applications that leads to the success of the overall
               product
             </Text>
           </Box>
@@ -43,7 +42,7 @@ export default function Footer() {
             {/* <Text fontSize={{ base: "l", md: "l", lg: "xl" }}>Social</Text> */}
             <br />
             <HStack>
-              <Link href="https://github.com/rmauryaa">
+              <Link href="https://github.com/simply-code-it">
                 <IconButton
                   as={FaGithub}
                   aria-label="GitHub"
@@ -53,7 +52,7 @@ export default function Footer() {
                   _hover={{ transform: "scale(1.1)" }}
                 />
               </Link>
-              <Link href="https://www.linkedin.com/in/rmaurya/">
+              <Link href="https://www.linkedin.com/in/simplycodeit/">
                 <Image
                   src={LinkedinIcon}
                   alt="Linkedin"
@@ -62,7 +61,7 @@ export default function Footer() {
                 />
               </Link>
 
-              <Link href="https://www.instagram.com/rmaurya_/">
+              <Link href="https://www.instagram.com/dashwar.pradeep/">
                 <Image
                   src={InstagramIcon}
                   alt="Instagram"
@@ -89,7 +88,7 @@ export default function Footer() {
           fontWeight={"bold"}
           textAlign={"center"}
         >
-          © Copyright 2024. Made by Rahul
+          © Copyright 2024. Made by Pradeep
         </Text>
       </Box>
     </section>

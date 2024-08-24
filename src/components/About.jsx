@@ -28,7 +28,7 @@ const About = () => {
             borderRadius="15px"
             boxSize={{ base: "200px", md: "250px", lg: "300px" }}
             src={pic1}
-            alt="rahul"
+            alt="pradeep"
           />
         </Box>
 
@@ -92,7 +92,7 @@ const About = () => {
                 Name:
               </Text>
               <Text fontSize="lg" fontWeight="semibold" color={textColor} mt={1}>
-                Rahul Maurya
+                Pradeep Yadav
               </Text>
             </Flex>
 
@@ -101,7 +101,7 @@ const About = () => {
                 Mobile Number:
               </Text>
               <Text fontSize="lg" fontWeight="semibold" color={textColor} mt={1}>
-                +91 7011101778
+                +91 8433162392
               </Text>
             </Flex>
 
@@ -110,7 +110,7 @@ const About = () => {
                 E-Mail:
               </Text>
               <Text fontSize="lg" fontWeight="semibold" color={textColor} mt={1}>
-                rahulmaurya1036@gmail.com
+                dashwar.pradeep@gmail.com
               </Text>
             </Flex>
           </VStack>

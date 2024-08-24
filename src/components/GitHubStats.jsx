@@ -16,9 +16,9 @@ export default function GithubCalender() {
   }, [refresh]);
 
   const lightThemeURL =
-    "https://github-readme-streak-stats.herokuapp.com/?user=rmauryaa&theme=transparent&hide_border=true&title_color=black&text_color=black&sideNums=black&sideLabels=black&ring=black&fire=black&currStreakLabel=black&currStreakNum=black";
+    "https://github-readme-streak-stats.herokuapp.com/?user=simply-code-it&theme=transparent&hide_border=true&title_color=black&text_color=black&sideNums=black&sideLabels=black&ring=black&fire=black&currStreakLabel=black&currStreakNum=black";
   const darkThemeURL =
-    "https://github-readme-streak-stats.herokuapp.com/?user=rmauryaa&theme=transparent&hide_border=true&title_color=white&text_color=white&sideNums=white&sideLabels=white&ring=white&fire=white&currStreakLabel=white&currStreakNum=white";
+    "https://github-readme-streak-stats.herokuapp.com/?user=simply-code-it&theme=transparent&hide_border=true&title_color=white&text_color=white&sideNums=white&sideLabels=white&ring=white&fire=white&currStreakLabel=white&currStreakNum=white";
 
   const imageURL = colorMode === "dark" ? darkThemeURL : lightThemeURL;
 
@@ -63,7 +63,7 @@ export default function GithubCalender() {
         <GitHubCalendar
           className="react-activity-calendar"
           color="skyblue"
-          username="rmauryaa"
+          username="simply-code-it"
           year={new Date().getFullYear()}
         />
       </Box>
@@ -80,7 +80,7 @@ export default function GithubCalender() {
         <img
           id="github-top-langs"
           width="100%"
-          src="https://github-readme-stats.vercel.app/api/top-langs?username=rmauryaa&theme=transparent&hide_border=true&show_icons=true&locale=en&layout=compact&title_color=white&text_color=white"
+          src="https://github-readme-stats.vercel.app/api/top-langs?username=simply-code-it&theme=transparent&hide_border=true&show_icons=true&locale=en&layout=compact&title_color=white&text_color=white"
         />
       </Box>
       <Box
@@ -96,7 +96,7 @@ export default function GithubCalender() {
         <img
           id="github-stats-card"
           width="100%"
-          src="https://github-readme-stats.vercel.app/api?username=rmauryaa&theme=transparent&hide_border=true&show_icons=true&locale=en&title_color=white&text_color=white"
+          src="https://github-readme-stats.vercel.app/api?username=simply-code-it&theme=transparent&hide_border=true&show_icons=true&locale=en&title_color=white&text_color=white"
         />
       </Box>
       <Box

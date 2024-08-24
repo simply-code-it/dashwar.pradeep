@@ -52,7 +52,7 @@ function Header() {
             p={3}
             pt={200}
           >
-            <Link href="https://github.com/rmauryaa/">
+            <Link href="https://github.com/simply-code-it/">
               <IconButton
                 as={FaGithub}
                 aria-label="GitHub"
@@ -62,7 +62,7 @@ function Header() {
                 _hover={{ transform: "scale(1.1)" }}
               />
             </Link>
-            <Link href="https://www.linkedin.com/in/rmaurya/">
+            <Link href="https://www.linkedin.com/in/simplycodeit/">
               <IconButton
                 as={FaLinkedin}
                 aria-label="LinkedIn"
@@ -72,7 +72,7 @@ function Header() {
                 _hover={{ transform: "scale(1.1)" }}
               />
             </Link>
-            <Link href="https://x.com/rmaurya__">
+            <Link href="https://x.com/pradeepWalkede">
               <IconButton
                 as={FaTwitter}
                 aria-label="Twitter"
@@ -82,7 +82,7 @@ function Header() {
                 _hover={{ transform: "scale(1.1)" }}
               />
             </Link>
-            <Link href="mailto:rahulmaurya1036@gmail.com">
+            <Link href="mailto:dashwar.pradeep@gmail.com">
               <IconButton
                 as={AiOutlineMail}
                 aria-label="Email"
@@ -92,7 +92,7 @@ function Header() {
                 _hover={{ transform: "scale(1.1)" }}
               />
             </Link>
-            <Link href="tel:+917011101778">
+            <Link href="tel:+918433162392">
               <IconButton
                 as={AiOutlinePhone}
                 aria-label="Phone"
@@ -128,7 +128,7 @@ function Header() {
             >
               <Typewriter
                 options={{
-                  strings: ["RAHUL", "CODER", "WEB DEVELOPER"],
+                  strings: ["Pradeep", "CODER", "WEB DEVELOPER"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -139,8 +139,7 @@ function Header() {
             </Text>
             <br />
             <Text color={"white"} fontSize={{ base: "l", md: "l", lg: "xl" }}>
-              A Frontend focused Web Developer building the Frontend of Websites
-              and Web Applications that leads to the success of the overall
+              A FullStack focused Web Developer building the Web Applications that leads to the success of the overall
               product
             </Text>
             <AnchorLink href="#contact">

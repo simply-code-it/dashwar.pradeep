@@ -88,7 +88,7 @@ const Navbar = () => {
           _hover={{ transform: "scale(1.02)", cursor: "pointer" }}
           display={{ base: "none", sm: "block", md: "block" }}
         >
-          RAHUL MAURYA
+          Pradeep Yadav
         </Text>
       </AnchorLink>
       <Box

@@ -102,7 +102,7 @@ const Contact = () => {
               fontWeight="semibold"
               color={textColor}
             >
-              Rahul Maurya
+              Pradeep Yadav
             </Text>
           </Flex>
 
@@ -122,7 +122,7 @@ const Contact = () => {
               fontWeight="semibold"
               color={textColor}
             >
-              +91 7011101778
+              +91 8433162392
             </Text>
           </Flex>
 
@@ -142,7 +142,7 @@ const Contact = () => {
               fontWeight="semibold"
               color={textColor}
             >
-              rahulmaurya1036@gmail.com
+              dashwar.pradeep@gmail.com
             </Text>
           </Flex>
         </Box> */}
